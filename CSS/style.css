@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 1px;
+}
+body{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+    background-color: #000;
+}
+header{
+    width: 100%;
+    height: 62px;
+    background: #5b7889;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+header h1{
+    color: #fff;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 60%;
+    margin-top: 15px;
+    box-shadow: 2 px #02010a;
+}
+nav{
+    float: right;                    
+    height: 62px; 
+    width: 40%;
+    margin-top: 15px;   
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;  
+    color: #fff;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;  
+    padding: 20px;        
+}
+
+#uno{
+  width: 900px;
+  height: 50%;
+  background: #82c3a6;
+}
+
+.contenido{
+    width: 900px;                       
+    display: flex;                 
+    flex-wrap: wrap;  
+    background: #d5c75f        
+  }
+  
+  .central{
+    width: 725px;                
+    height: 400px;               
+    margin: auto;                
+    margin-top: 50px;           
+    margin-bottom: 30px;         
+    position: relative;          
+    overflow: hidden;           
+  }
+  
+  .paisajes{
+    width: 400px;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+  }
+  .retratos{
+    width: 400px;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+  }
+  .central img{
+    width: 100%;                    
+    height: 100%;                           
+  }  
+  .paisajes img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .retratos img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .paisajes:hover{    
+    transform: rotate(10deg);                                
+    transition: all 1s; 
+  }
+  
+  .retratos:hover{     
+            
+    transform: translateX(20px);                         
+    transition: all 1s; 
+    animation: bounceIn 300ms;             
+  }
+  .retratos img:hover{
+    transform: translateY(-5px);  
+  }
+  .imagen1{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+    filter: blur(10px);
+  }
+  .imagen1 img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .imagen2{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+    filter: grayscale(100%);
+  }
+  .imagen2 img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .imagen3{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+    filter: sepia(90%);
+  }
+  .imagen3 img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .imagen4{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+    filter: grayscale(100%);
+  }
+  .imagen4 img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .imagen5{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+  }
+  .imagen5 img{
+    width: 100%;                    
+    height: 100%;                           
+  } 
+  .imagen6{
+    width: 30%;               
+    margin: auto;                
+    margin-top: 50px;            
+    margin-bottom: 30px;         
+    position: relative;          
+    box-shadow: #82c3a6;
+    filter: grayscale(100%);
+  }
+  .imagen6 img{
+    width: 100%;                    
+    height: 100%;                           
+  }  
+  .footer{
+  background: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  
+  }
+  .pie{
+    width: 25%; 
+    height: 100%;                                      
+    display: inline-block;               
+    background: #C6d5c5;
+    text-align: center;
+  }
+  .pie h2{
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+  }
+  .pie p{
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+  }
+  .pie img{
+    width: 20px;                             
+    height: 20px;                            
+    float: left;                            
+  }
+  .pie a{
+    float: right;  
+  }
+  
+  /*ESTILOS PARA DISPOSITIVOS MOVILES CON PANTALLAS MENORES A 900px*/
+  @media screen and (max-width:900px) {
+    .contenido{
+   width: 100%; 
+   display: block;                               
+    }
+    .imagen1{
+      width: 80vw;
+      margin: auto;
+      position: relative; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      filter: blur(10px);                       
+    }
+    .imagen2{
+      width: 80vw;
+      margin: auto;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px; 
+      filter: grayscale(100%);                          
+    }
+    .imagen3{
+      width: 80vw;
+      margin: auto;
+      position: relative; 
+      margin-top: 10px;
+      margin-bottom: 10px;  
+      filter: sepia(90%);                          
+    }
+    .imagen4{
+      width: 80vw;
+      margin: auto;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px; 
+      filter: grayscale(100%);                            
+    }
+    .imagen5{
+      width: 80vw;
+      margin: auto;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 10px;                             
+    }
+    .imagen6{
+      width: 80vw;
+      margin: auto;
+      position: relative;   
+      margin-top: 10px;
+      margin-bottom: 10px;  
+      filter: grayscale(100%);                        
+    }
+    #uno{
+      width: 100%; 
+      display: block; 
+      height: 50%;
+      background: #82c3a6;
+                        
+       }
+       .central{
+         width: 80vw;
+         margin: auto;
+         position: relative; 
+         margin-top: 10px;
+         margin-bottom: 10px;                            
+       }
+    header{
+      width: 100%;                               
+      height: auto; 
+      display: flex;                   
+    }
+    header h1{
+      width: 90%;                               
+      height: auto;
+      font-size: 20px;
+      position: absolute;
+      margin: auto; 
+      text-align: center;            
+    }
+    nav{
+      width: 100%;                                                          
+      height: auto; 
+      display: block;
+      text-align: center;                          
+    }
+    nav a{
+      font-size: 20px;
+      display: inline-block;
+    }
+    body{
+      width: 90%;
+    }
+    .pie{
+      width: 100%; 
+      height: auto;                                      
+      display: block;               
+      background: #C6d5c5;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .pie h2{
+      margin-top: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+      font-style: italic;
+    }
+    .pie p{
+      margin-top: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+    }
+    .pie img{
+      width: 20px;                             
+      height: 20px;                                                       
+    }
+    .pie a{
+      float: left; 
+      display: block; 
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    .footer{
+      width: 100%;                               
+      height: auto; 
+      display: block;                   
+    }
+  }
+  
